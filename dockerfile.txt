@@ -1,0 +1,19 @@
+FROM eclipse-temurin:21-jdk AS build
+
+WORKDIR /app
+
+# Copia o projeto para dentro da imagem
+COPY . /app/
+
+# Dá permissão e faz o build
+RUN chmod +x ./mvnw && ./mvnw -B -DskipTests clean install
+
+# ----------------------
+# Fase final (imagem mais leve)
+FROM eclipse-temurin:21-jdk
+
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
