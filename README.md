@@ -1,6 +1,6 @@
 # 🎮 DSList - Catálogo de Jogos com Spring Boot
 
-Este é um projeto backend desenvolvido com **Java 17** e **Spring Boot**, que permite gerenciar listas de jogos. A aplicação fornece uma API RESTful para listar jogos, visualizar listas e reordenar jogos dentro das listas.
+Este é um projeto backend desenvolvido com **Java 21** e **Spring Boot**, que permite gerenciar listas de jogos. A aplicação fornece uma API RESTful para listar jogos, visualizar listas e reordenar jogos dentro das listas.
 
 > Projeto desenvolvido durante o **Intensivão Java Spring** promovido pela [DevSuperior](https://devsuperior.com.br).
 
@@ -18,7 +18,7 @@ O objetivo do projeto é simular um sistema de listas de jogos (como "Top 10 RPG
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Java 17**
+- **Java 21**
 - **Spring Boot**
 - **Spring Data JPA**
 - **PostgreSQL**
@@ -34,7 +34,7 @@ O objetivo do projeto é simular um sistema de listas de jogos (como "Top 10 RPG
 dslist/
 ├── src/
 │   ├── main/
-│   │   ├── java/com/devsuperior/dslist/
+│   │   ├── java/com/giovannyenes/dslist/
 │   │   │   ├── controllers/      # Controladores REST
 │   │   │   ├── dto/              # Data Transfer Objects
 │   │   │   ├── entities/         # Entidades JPA
@@ -52,7 +52,7 @@ dslist/
 
 ### Pré-requisitos
 
-- Java 17+
+- Java 21+
 - Maven
 - PostgreSQL
 
@@ -98,6 +98,5 @@ dslist/
 ## 👨‍💻 Autor
 
 Desenvolvido por **Giovanny Enes**  
-GitHub: [@GiovannyEnes](https://github.com/GiovannyEnes)
 
 ---
